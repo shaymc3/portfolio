@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
 
   <!--
     - custom css link
@@ -37,7 +37,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="aside sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -51,32 +51,10 @@
           <p class="title">QA Engineer</p>
         </div>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/shaycohen27/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/shaymc3" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="mailto:shayc.qa@gmail.com" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+         
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <i class="fa-solid fa-chevron-down"></i>
         </button>
 
       </div>
@@ -90,36 +68,7 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+972525568481" class="contact-link">052-5568481</a>
-            </div>
-
-          </li>
-
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:shayc.qa@gmail.com" class="contact-link">shayc.qa@gmail.com</a>
-            </div>
-
-          </li>
-
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <i class="fa-solid fa-cake-candles"></i>
             </div>
 
             <div class="contact-info">
@@ -133,21 +82,52 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Ashdod, Israel</address>
+              <address class="contact-link">Ashdod, Israel</address>
             </div>
 
           </li>
 
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fa-brands fa-github"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/shaymc3" target="_blank" class="contact-link">Shaymc3</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Linkedin</p>
+
+              <a href="https://www.linkedin.com/in/shaycohen27" target="_blank" class="contact-link">Shaycohen27</a>
+            </div>
+
+          </li>
+		  
+		  
+
+
         </ul>
 
+</div>
 
-      </div>
 
     </aside>
 
@@ -170,23 +150,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" id="about" data-nav-link><ion-icon name="person"></ion-icon> <b>About</b></button>
+            <button class="navbar-link  active" id="about" data-nav-link><i class="fa-solid fa-address-card"></i> <b>About</b></button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" id="resume" data-nav-link><ion-icon name="document-text-outline"></ion-icon> <b>Resume</b></button>
+            <button class="navbar-link" id="resume" data-nav-link><i class="fa-solid fa-file-lines"></i> <b>Resume</b></button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" id="projects" data-nav-link><ion-icon name="file-tray-stacked"></ion-icon><b> Projects</b></button>
+            <button class="navbar-link" id="projects" data-nav-link><i class="fa-solid fa-suitcase"></i> <b> Projects</b></button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" id="blog" data-nav-link><ion-icon name="create"></ion-icon> <b>Blog</b></button>
+            <button class="navbar-link" id="blog" data-nav-link><i class="fa-solid fa-square-pen"></i> <b>Blog</b></button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" id="contact" data-nav-link><ion-icon name="mail"></ion-icon> <b>Contact</b></button>
+            <button class="navbar-link" id="contact" data-nav-link><i class="fa-solid fa-envelope"></i> <b>Contact</b></button>
           </li>
 		    
 
@@ -209,14 +189,24 @@
         </header>
 
         <section class="about-text">
-          <p>
+         
 		  
-		                  <p>Hi, I’m <b>Shay Cohen</b>, 35 years old, married, and a father of two. I live in <b>Ashdod, Israel</b>, and have been working as a <b>warehouse manager since 2011</b>.</p>
-                <p> While my job has given me stability, I’ve always had a deep love for technology. As a kid, I enjoyed <b>building websites with PHP and JavaScript</b>, and at 25, I pursued studies in <b>iOS and Android development</b>. I even launched a game on the App Store, but life led me in a different direction.  </p>
-                <p>Now, at 35, I’m making a bold move - I’m transitioning into a career as a <b>QA Engineer</b>. Learning manual and automation testing is my way of improving my future, not just for me but for my family. It’s an exciting challenge, and I’m determined to succeed.  </p>
-          </p>
+		                  <h3>Hello!, I’m </h3>
+						  <h2 class="colored">Shay Cohen,</h2>
+						<h4> 35 years old, married, and a father of two.<p> I live in 
+						  Ashdod, Israel, and have been working as a warehouse manager since 2011.</p>
+                <p> While my job has given me stability, I’ve always had a deep love for technology. As a kid, I enjoyed 
+				building websites with HTML,CSS,PHP and JavaScript and at 25, I pursued studies in 
+				iOS and Android development. I even launched a game on the App Store, but life led me in a different direction.  </p>
+                <p>Now, at 35, I’m making a bold move - I’m transitioning into a career as a QA Engineer. Learning manual and automation testing is my way of improving my future, not just for me but for my family. It’s an exciting challenge, and I’m determined to succeed.  </p></h4>
+          
 
-
+            <div class="buttons">
+                <button class="btn btn-primary" id="contact" data-nav-link>Contact Me</button>
+                <button class="btn btn-outline" id="projects" data-nav-link>My Projects</button>
+            </div>
+			
+			</section>
         <!--
           - service
         -->
@@ -227,13 +217,50 @@
 
           <ul class="service-list">
 
+
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <i class="fa-solid fa-file"></i>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">STD, STP, STR writing documentation</h4>
+
+                <p class="service-item-text">
+                  creating clear and structured test documents.
+					They define the test plan (STP), test cases (STD), and report test results (STR) for organized and effective QA processes.
+                </p>
+              </div>
+
+            </li>
+
+
+		   <li class="service-item">
+
+              <div class="service-icon-box">
+               <i class="fa-solid fa-bug"></i>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Bug Reporting & Tracking</h4>
+
+                <p class="service-item-text">
+                  documenting defects with clear details and tracking their status until resolved.
+					It helps teams prioritize, fix, and verify bugs using tools like Jira, Bugzilla, or Azure DevOps.
+                </p>
+              </div>
+
+            </li>
+			
+
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
 
-              <div class="service-content-box" width="40">
+              <div class="service-content-box">
                 <h4 class="h4 service-item-title">Functional Testing</h4>
 
                 <p class="service-item-text">
@@ -247,7 +274,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-			    <ion-icon name="speedometer-outline"></ion-icon>
+			    <i class="fa-solid fa-gauge"></i>
               </div>
 
               <div class="service-content-box">
@@ -264,7 +291,7 @@
             <li class="service-item">
 				
               <div class="service-icon-box">
-                <ion-icon name="cog-outline"></ion-icon>
+                <i class="fa-solid fa-wrench"></i>
               </div>
 
               <div class="service-content-box">
@@ -281,7 +308,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="sparkles-outline"></ion-icon>
+                <i class="fa-solid fa-star"></i>
               </div>
 
               <div class="service-content-box">
@@ -295,215 +322,14 @@
 
             </li>
 			
-			            <li class="service-item">
 
-              <div class="service-icon-box">
-               <ion-icon name="bug-outline"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bug Reporting & Tracking</h4>
-
-                <p class="service-item-text">
-                  documenting defects with clear details and tracking their status until resolved.
-					It helps teams prioritize, fix, and verify bugs using tools like Jira, Bugzilla, or Azure DevOps.
-                </p>
-              </div>
-
-            </li>
 			
-			            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="documents-outline"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">STD, STP, STR writing documentation</h4>
-
-                <p class="service-item-text">
-                  creating clear and structured test documents.
-					They define the test plan (STP), test cases (STD), and report test results (STR) for organized and effective QA processes.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-	
-        <!--
-          - testimonials
-        -->
-		<!--
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
--->
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-             
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
- <!--
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
 
 
           </ul>
 
         </section>
- -->
+
       </article>
 
 
@@ -523,7 +349,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+             <i class="fa-solid fa-book-open"></i>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -587,7 +413,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <i class="fa-solid fa-book-open"></i>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -621,36 +447,158 @@
             </li>
 
           </ol>
-		  <br><br>
-		          <ul class="social-list">
-
-          <li class="social-item">
-		      <div class="info-content">
-            <a href="#">
- 
-          <p class="download-resume"><ion-icon name="document-text-outline"></ion-icon> Download EN Resume</p>
-        
-            </a></div>
-          </li>
-
-          <li class="social-item">
-		  <div class="info-content">
-            <a href="#">
- 
-         <p class="download-resume"><ion-icon name="document-text-outline"></ion-icon> Download HE Resume</p>
-        
-            </a></div>
-          </li>
-        </ul>
+		  
 
         </section>
+		
+		
 
+		
+		
+		
+ 
+   <section class="skill">
+   
+             <h3 class="h3 skills-title">My skills & Tools</h3>
+  <div class="container">
+    <div class="skills-container">
+      <!-- Soft Skills Section -->
+      <div class="skills-section content-card">
+        <div class="section-header">
+          <div class="skill-icon">
+            <i class="fas fa-brain fa-lg"></i>
+          </div>
+          <h3 class="h3">Soft Skills</h3>
+        </div>
+        <ul class="skills-list">
+		
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="timeline-text">
+              <h4 class="h4 timeline-item-title">Communication</h4>
+              <p class="skill-description">Clear reporting of test results and defects</p>
+            </div>
+          </li>
+		  
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Attention to Detail</h4>
+              <p class="timeline-text">Identifying subtle issues and edge cases</p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Problem Solving</h4>
+              <p class="timeline-text">Analytical approach to debugging and testing</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Collaboration</h4>
+              <p class="timeline-text">Working effectively with developers and stakeholders</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Organization</h4>
+              <p class="timeline-text">Structured approach to test planning and execution</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Tools Section -->
+      <div class="skills-section content-card">
+        <div class="section-header">
+          <div class="skill-icon">
+            <i class="fas fa-tools fa-lg"></i>
+          </div>
+          <h3 class="h3">Tools & Technologies</h3>
+        </div>
+        <ul class="skills-list">
+          <li class="skill-item">
+            <div class="skill-icon">
+               <img class="tools-icon" src="assets/images/svg/jira.svg" alt="jira">
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Jira</h4>
+              <p class="timeline-text">Bug tracking and test case management</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+            <img class="tools-icon" src="assets/images/svg/playwright.svg" alt="playwright">
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Playwright</h4>
+              <p class="timeline-text">Web application automated testing</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+              <img class="tools-icon" src="assets/images/svg/postman.svg" alt="postman">
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Postman</h4>
+              <p class="timeline-text">API testing and validation</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+           <img class="tools-icon" src="assets/images/svg/git.svg" alt="git">
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">Git</h4>
+              <p class="timeline-text">Version control and collaboration</p>
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div>
+              <h4 class="h4 timeline-item-title">JMeter</h4>
+              <p class="timeline-text">Performance and load testing</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+		
+	
+		
+
+
+			
+		
+		
         <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
 
           <ul class="skills-list content-card">
 
+        <div class="section-header">
+          <div class="skill-icon">
+            <i class="fas fa-brain fa-lg"></i>
+          </div>
+          <h3 class="h3">Skills</h3>
+        </div>
             <li class="skills-item">
 
               <div class="title-wrapper">
@@ -749,7 +697,7 @@
               <div class="select-value" data-selecct-value>Select category</div>
 
               <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+                <i class="fa-solid fa-chevron-down"></i>
               </div>
 
             </button>
@@ -780,7 +728,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <i class="fa-solid fa-eye"></i>
                   </div>
 
                   <img src="./assets/images/project-1.jpg" alt="automations" loading="lazy">
@@ -819,12 +767,11 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-			
-            <a class="navbar-link" id="hobby" data-nav-link >
+				<a id="hobby" data-nav-link >
 			
 			<figure class="blog-banner-box">
 				
-                  <img src="./assets/images/drone6.jpg" alt="My Hobby" loading="lazy">
+                  <img src="./assets/images/drone6.jpg" alt="Drones" loading="lazy">
 				  
                 </figure>
 
@@ -851,9 +798,9 @@
 
             <li class="blog-post-item">
               
-			<a class="navbar-link" id="trip" data-nav-link >
+			<a id="trip" data-nav-link >
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/thailand6.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/thailand6.jpg" alt="Thailand" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -862,7 +809,7 @@
                     <p class="blog-category">Travel</p>
 
                   
-
+						<span class="dot"></span>
 
                     <time datetime="2022-02-23">Fab 24, 2017</time>
                   </div>
@@ -871,7 +818,7 @@
                   <h3 class="h3 blog-item-title">My Trip To Thailand</h3>
 					
 					
-					<div class="separator"></div>
+			
                   <p class="blog-text">
                     Thailand was one of the most unforgettable trips I’ve ever taken. The combination of bustling streets of Bangkok
 					to the serene rice paddies in the north and the dreamy beaches in the south, made it a dream destination.
@@ -906,57 +853,50 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-		<h5 class="h5">
-		For any inquiries, feel free to contact me via email at shayc.qa@gmail.com or through LinkedIn.
-		<br><br>
-		        <ul class="social-list">
 
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/shaycohen27/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-		  
-          <li class="social-item">
-            <a href="mailto:shayc.qa@gmail.com" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
 
-        </ul>
-		</h5>
-<!--
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+      
 
-        <section class="contact-form">
+    		
+		<h5 class="h5">For any inquiries, feel free to contact me via one of the following methods.</h5>
+		<div class="separator"></div>
+		        <ul class="contacts-list">
 
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <li class="contact-item service-item">
+				
+            <div class="icon-box">
+              <i class="fa-brands fa-whatsapp"></i>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="contact-info">
+              <p class="contact-title">Phone / WhatsApp</p>
+            <a href="https://wa.me/+972525568481" target="_blank" class="contact-link">052-5568481</a>
+			  
+            </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+          </li>
 
-          </form>
 
-        </section>
--->
+          <li class="contact-item service-item">
+				
+            <div class="icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:shayc.qa@gmail.com" class="contact-link">shayc.qa@gmail.com</a>
+			  
+            </div>
+
+          </li>
+		  
+	  
+        </ul>
+	
+ 
+
 
 
       </article>
@@ -974,7 +914,7 @@
         </header>
 
         <section class="about-text">
-            <div class="modal-content">
+        
               
               <div data-modal-text>
                             <div data-modal-text>
@@ -986,7 +926,7 @@
                     <time datetime="2025-02-23">23 Fab, 2025</time>
                   </div>
 			  
-			  <div class="separator"></div>
+			
                 <p>One of my biggest passions is <b>drones</b> - not just flying them, but <b>building</b> them from scratch.
 				There’s something incredible about assembling the parts, programming the flight controller, and then watching it take off.
 				I enjoy capturing breathtaking aerial footage and experimenting with <b>FPV (First Person View) racing</b>.</p>
@@ -994,7 +934,7 @@
    <br>
 				
             
-				         <section class="clients">
+				      
 
           <h3 class="h3 clients-title">Here’s a glimpse of my hobby:</h3>
 
@@ -1002,43 +942,43 @@
 
             <li class="blog-item">
               
-                     <img class="imgs" src="./assets/images/drone1.jpg" width="80" data-testimonials-avatar>
+                     <img class="imgs" src="./assets/images/drone1.jpg" alt="Drones" width="80" data-testimonials-avatar>
              
             </li>
 			
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone2.jpg">
+                     <img class="imgs" src="./assets/images/drone2.jpg" alt="Drones">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone3.jpg">
+                     <img class="imgs" src="./assets/images/drone3.jpg" alt="Drones">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone4.jpg">
+                     <img class="imgs" src="./assets/images/drone4.jpg" alt="Drones">
               
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone5.jpg" >
+                     <img class="imgs" src="./assets/images/drone5.jpg" alt="Drones">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone6.jpg" >
+                     <img class="imgs" src="./assets/images/drone6.jpg" alt="Drones">
              
             </li>
 			            <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone7.jpg" >
+                     <img class="imgs" src="./assets/images/drone7.jpg" alt="Drones">
               
             </li>
 
@@ -1075,10 +1015,10 @@
                     <time datetime="2017-02-24">24 Fab, 2017</time>
                   </div>
 			  
-			  <div class="separator"></div>
+			 
 			   <div data-modal-text>
                 <p>Thailand was one of the most unforgettable trips I’ve ever taken. The combination of bustling streets of Bangkok
-					to the serene rice paddies in the north and the dreamy beaches in the south, made it a dream destination.
+					to the serene rice paddies in the north and the dreamy beaches in the south, made it a dream destination.</p>
 
 					<p><b>Bangkok – The City That Never Sleeps</b></p>
 					<p>Bangkok was my first stop. The Grand Palace was breathtaking, and the floating markets were a unique experience. At night,
@@ -1097,7 +1037,7 @@
    <br>
 				
             
-				         <section class="clients">
+				     
 
           <h3 class="h3 clients-title">Here’s some photos:</h3>
 
@@ -1105,37 +1045,37 @@
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand1.jpg" >
+                     <img class="imgs" src="./assets/images/thailand1.jpg" alt="Thailand">
             
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand2.jpg">
+                     <img class="imgs" src="./assets/images/thailand2.jpg" alt="Thailand">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/thailand3.jpg">
+                     <img class="imgs" src="./assets/images/thailand3.jpg" alt="Thailand">
               
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand4.jpg">
+                     <img class="imgs" src="./assets/images/thailand4.jpg" alt="Thailand">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/thailand5.jpg" >
+                     <img class="imgs" src="./assets/images/thailand5.jpg" alt="Thailand">
              
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand6.jpg" >
+                     <img class="imgs" src="./assets/images/thailand6.jpg" alt="Thailand">
               
             </li>
 
@@ -1170,17 +1110,17 @@
 				<p>This is an end-to-end automation testing project built with Python and <b>Playwright</b>, integrated with <b>Jenkins</b> for CI/CD execution.</p>
 
 				<h3> 🔧 Tools & Technologies</h3>
-				 - Language: Python 3.x  </br>
-				 - Testing Framework: Playwright  </br>
-				- CI/CD: Jenkins  </br>
-				- Reporting: Playwright HTML Reports  </br></br>
+				 - Language: Python 3.x  <br>
+				 - Testing Framework: Playwright  <br>
+				- CI/CD: Jenkins  <br>
+				- Reporting: Playwright HTML Reports  <br><br>
 		<div class="info-content">
             <a href="#">
-          <p class="download-resume"><ion-icon name="document-text-outline"></ion-icon> Project On Github</p>
+          <p class="download-resume"><i class="fa-brands fa-github-alt"></i> Project On Github</p>
             </a>
 			
-			</br> 
-			<h3>Demo video</h3></br>
+			<br> 
+			<h3>Demo video</h3><br>
 						<iframe 
 									src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
 						</iframe>
@@ -1204,13 +1144,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </body>
 
 </html>
