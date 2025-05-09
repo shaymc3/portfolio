@@ -393,6 +393,74 @@ article.active {
 
 
 /*-----------------------------------*\
+  #SKILL STYLE
+\*-----------------------------------*/
+
+   
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      
+	  
+    }
+    
+    .skills-section {
+      flex: 1;
+      min-width: 400px;
+    }
+    
+    .section-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    
+    
+    .skills-list {
+      list-style: none;
+    }
+    
+    .skill-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    
+    .skill-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .skill-icon {
+   
+      margin-right: 1rem;
+	   position: relative;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+    }
+	
+    .head-icon {
+   
+ 
+  color: white;
+
+    }
+       
+    .skill-description {
+      margin-top: 0.25rem;
+    }
+
+      
+    }
+/*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
 
@@ -1357,7 +1425,6 @@ main {
   }
 
 
-
   /**
    * #MAIN
    */
@@ -1933,64 +2000,4 @@ main {
 }
 
 
-/*-----------------------------------*\
-  #SKILL STYLE
-\*-----------------------------------*/
 
-   
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      
-	  
-    }
-    
-    .skills-section {
-      flex: 1;
-      min-width: 400px;
-    }
-    
-    .section-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid #e5e7eb;
-    }
-
-    
-    
-    .skills-list {
-      list-style: none;
-    }
-    
-    .skill-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
-    
-    .skill-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .skill-icon {
-   
-      margin-right: 1rem;
-	   position: relative;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  color: var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-1);
-  z-index: 1;
-    }
-       
-    .skill-description {
-      margin-top: 0.25rem;
-    }
-
-      
-    }
