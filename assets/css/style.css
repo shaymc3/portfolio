@@ -124,8 +124,13 @@ li { list-style: none; }
 
 img, a, button, time, span { display: block; }
 
+.profile-img {
+  width:80px;
+  border-radius: 30px;
+}
 .imgs {
   transition: transform .2s; /* Animation */
+   border-radius:30px;
 }
 
 .tools-icon{
@@ -134,7 +139,7 @@ img, a, button, time, span { display: block; }
 
 .imgs:hover {
   transform: scale(1.3); /* (130% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  border-radius:30px;
+ 
 }
 
 .download-resume{
@@ -593,7 +598,7 @@ main {
   align-items: center;
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 20px 7px;
+  padding: 15px 8px;
   transition: color var(--transition-1);
 }
 
@@ -1278,15 +1283,9 @@ main {
     .skills-container {
       display: flex;
       flex-wrap: wrap;
-      
-	  
     }
     
-    .skills-section {
-      flex: 1;
-      min-width: 400px;
-    }
-    
+
     .section-header {
       display: flex;
       align-items: center;
@@ -1348,13 +1347,6 @@ main {
 
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
-
-  .clients-item { min-width: calc(33.33% - 10px); }
-
-
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1367,6 +1359,12 @@ main {
 
  .navbar { border-radius: 20px 20px 20px 20px; }
 
+    .skills-section {
+
+      min-width: 250px;
+	  
+    }
+    
 }
 
 /**
@@ -1425,7 +1423,12 @@ main {
     font-size: 18px;
   }
 
-
+    .skills-section {
+      flex: 1;
+      min-width: 400px;
+	  
+    }
+    
   /**
    * #MAIN
    */
