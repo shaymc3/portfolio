@@ -1270,44 +1270,6 @@ main {
 
 
 
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
-@media (min-width: 450px) {
-
-  /**
-   * client
-   */
-
-  .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
-  .project-img,
-  .blog-banner-box { height: auto; }
-
-}
-
- .navbar { border-radius: 20px 20px 20px 20px; }
-
-
-
-/**
- * responsive larger than 580px screen
- */
-
-
-
 /*-----------------------------------*\
   #SKILL STYLE
 \*-----------------------------------*/
@@ -1374,8 +1336,44 @@ main {
       margin-top: 0.25rem;
     }
 
+
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * responsive larger than 450px screen
+ */
+
+@media (min-width: 450px) {
+
+  /**
+   * client
+   */
+
+  .clients-item { min-width: calc(33.33% - 10px); }
+
+
+
+  /**
+   * #PORTFOLIO, BLOG 
+   */
+
+  .project-img,
+  .blog-banner-box { height: auto; }
+
+
+
+ .navbar { border-radius: 20px 20px 20px 20px; }
+
+}
+
+/**
+ * responsive larger than 580px screen
+ */
+
       
-    }
 @media (min-width: 580px) {
 
   /**
