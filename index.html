@@ -207,6 +207,10 @@
             </div>
 			
 			</section>
+			
+					
+			
+			
         <!--
           - service
         -->
@@ -942,43 +946,43 @@
 
             <li class="blog-item">
               
-                     <img class="imgs" src="./assets/images/drone1.jpg" alt="Drones" width="80" data-testimonials-avatar>
+                     <img class="imgs" src="./assets/images/drone1.jpg" alt="Custom FPV Drone" onclick="enlargeImage(this)">
              
             </li>
 			
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone2.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone2.jpg" alt="Custom FPV Drone" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone3.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone3.jpg" alt="Custom Pixhawk Drone" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone4.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone4.jpg" alt="Custom Pixhawk Drone" onclick="enlargeImage(this)">
               
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone5.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone5.jpg" alt="Custom Pixhawk Drone" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone6.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone6.jpg" alt="3DR Iris+ Autonomous multicopter" onclick="enlargeImage(this)">
              
             </li>
 			            <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/drone7.jpg" alt="Drones">
+                     <img class="imgs" src="./assets/images/drone7.jpg" alt="Mini FPV Drone" onclick="enlargeImage(this)">
               
             </li>
 
@@ -1047,37 +1051,37 @@
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand1.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand1.jpg" alt="Bangkok" onclick="enlargeImage(this)">
             
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand2.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand2.jpg" alt="Bangkok" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/thailand3.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand3.jpg" alt="Chiang Mai" onclick="enlargeImage(this)">
               
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand4.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand4.jpg" alt="Chiang Mai" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
              
-                     <img class="imgs" src="./assets/images/thailand5.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand5.jpg" alt="Koh Phangan" onclick="enlargeImage(this)">
              
             </li>
 
             <li class="blog-item">
             
-                     <img class="imgs" src="./assets/images/thailand6.jpg" alt="Thailand">
+                     <img class="imgs" src="./assets/images/thailand6.jpg" alt="Koh Phangan" onclick="enlargeImage(this)">
               
             </li>
 
@@ -1135,6 +1139,22 @@
 
     </div>
 
+
+
+
+
+    <!-- Modal container (hidden by default) -->
+    <div id="imageModal">
+        <div class="modal-content">
+            <span id="closeBtn" onclick="closeModal()">x</span>
+            <div class="nav-buttons-container">
+                <img id="enlargedImg" src="" alt="">
+            </div>
+            <p id="imgAlt"></p>
+        </div>
+    </div>
+			
+			
   </main>
 
 
