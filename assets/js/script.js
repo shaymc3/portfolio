@@ -123,3 +123,56 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+
+
+        function enlargeImage(img) {
+            // Get the modal elements
+            var modal = document.getElementById("imageModal");
+            var enlargedImg = document.getElementById("enlargedImg");
+            var imgAlt = document.getElementById("imgAlt");
+            
+            // Set the image source and alt text
+            enlargedImg.src = img.src;
+            enlargedImg.alt = img.alt;
+            imgAlt.textContent = img.alt;
+            
+            // Show the modal with fade-in effect
+            modal.style.display = "block";
+            // Trigger reflow to enable transition
+            modal.offsetWidth;
+            modal.style.opacity = "1";
+            
+            // Add event listener to close modal when clicking outside
+            modal.addEventListener("click", function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Add event listener for escape key
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "Escape") {
+                    closeModal();
+                }
+            });
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            // Fade out effect
+            modal.style.opacity = "0";
+            // Wait for transition to complete before hiding
+            setTimeout(function() {
+                modal.style.display = "none";
+            }, 300);
+        }
+
+        // Clean up event listeners when modal is closed
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("imageModal");
+            modal.addEventListener("transitionend", function() {
+                if (modal.style.opacity === "0") {
+                    modal.style.display = "none";
+                }
+            });
+        });
