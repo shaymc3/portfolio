@@ -304,6 +304,12 @@ article.active {
   margin-bottom: 7px;
 }
 
+.bold-text {
+	
+	font-size: var(--fs-4);
+	  color: var(--white-2);
+  text-transform: capitalize;
+}
 
 .article-title {
   position: relative;
