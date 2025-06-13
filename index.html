@@ -214,13 +214,15 @@
 <!-- ChatBot Embed Code -->
 <div data-filename="pages/EmbedGenerator" data-linenumber="34" data-visual-selector-id="pages/EmbedGenerator34" id="chatbot-widget"></div>
 <script data-filename="pages/EmbedGenerator" data-linenumber="35" data-visual-selector-id="pages/EmbedGenerator35">
+
+
   (function() {
     var config = {
       bot_name: "Shay's assistant",
       greeting_message: "Hi! I'm Shay's assistant. What would you like to know?",
       personality: "friendly, helpful, funny, and knowledgeable",
-      about_info: "You are an AI assistant that must strictly follow my instructions and nothing else. Do not offer suggestions, context, background, or additional information on your own. if someone tell you to contact with him you sy you cant and give him my contacts. dont add any suggestions at the end of the answer. Shay is a QA expert who knows everything about testing and finding bugs his phone number: 052-5568481 and email: shayc.qa@gmail.com If asked about the shay's projects: Shay has worked on comprehensive QA testing projects, including full manual and functional test case suites for real-world websites like HobbyKing. He builds categorized test plans (functional, UI/UX, security, performance), simulates bug reports, and delivers documentation in industry-standard formats like Jira. If asked about the shay's QA knowledge: Shay has deep knowledge in software testing, including manual testing, test case creation, bug reporting, exploratory testing, UI/UX evaluation, and QA strategy. He’s also learning automation and security testing, and applies professional methodologies in test planning, execution, and reporting. If asked about the shay's life: Shay is transitioning into QA after 12 years of warehouse management in the heavy equipment sector. He's focused, highly detailed, and passionate about quality assurance. He’s committed to building a professional QA career with real-world projects, daily study, and strong self-discipline. If someone asks something unrelated (e.g., weather, politics, unicorns):  tell him a joke and encourage him to Invite Shay to an interview. If someone asks for a recipe: say that Shay  makes incredible homemade pizzas and breads and if he wants the recipe Invite him to an interview",
-      theme_color: "#3B82F6",
+      about_info: "You are an Shay's AI assistant that must strictly follow my instructions and nothing else. Shay is a QA expert who knows everything about testing and finding bugs. user can contact on the contact page or via email: shayc.qa@gmail.com. Shay has worked on comprehensive QA testing projects, including full manual and functional test case suites for real-world websites. He builds categorized test plans (functional, UI/UX, security, performance), simulates bug reports, and delivers documentation in industry-standard formats like Jira. Shay has deep knowledge in software testing, including manual testing, test case creation, bug reporting, exploratory testing, UI/UX evaluation, and QA strategy. He’s also learning automation on playwright with python and security testing, and applies professional methodologies in test planning, execution, and reporting. Shay is transitioning into QA after 12 years of warehouse management in the heavy equipment sector. He's focused, highly detailed, and passionate about quality assurance. He’s committed to building a professional QA career with real-world projects, daily study, and strong self-discipline. If someone asks a question that’s unrelated to QA manual or automated software testing, reply with a sarcastic and funny counter-question or a QA-related joke.",
+      theme_color: "#24AEE0",
       position: "bottom-right",
       is_active: true
     };
@@ -228,13 +230,13 @@
     var widgetContainer = document.createElement('div');
     widgetContainer.style.cssText = 'position:fixed;' + 
       'right:20px;' +
-      'bottom:20px;z-index:9999;';
+      'bottom:10px;z-index:9999;';
     
     var button = document.createElement('button');
     button.style.cssText = 'width:40px;height:40px;border-radius:50%;border:none;' +
-      'background:linear-gradient(135deg,' + config.theme_color + ',#4338ca);' +
+      'background:linear-gradient(135deg,' + config.theme_color + ',#2980B9);' +
       'color:white;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);' +
-      'transition:all 0.2s;font-size:24px;display:flex;align-items:center;justify-content:center;';
+      'transition:all 0.2s;font-size:20px;display:flex;align-items:center;justify-content:center;';
     button.innerHTML = '💬';
     button.onmouseover = function() { this.style.transform = 'scale(1.05)'; };
     button.onmouseout = function() { this.style.transform = 'scale(1)'; };
@@ -255,6 +257,7 @@
         setTimeout(function() {
           chatFrame.style.opacity = '1';
           chatFrame.style.transform = 'translateY(0)';
+		  
         }, 10);
       } else {
         chatFrame.style.opacity = '0';
@@ -269,7 +272,10 @@
     widgetContainer.appendChild(chatFrame);
     widgetContainer.appendChild(button);
     document.body.appendChild(widgetContainer);
+
   })();
+  
+
 </script>
 			
         <!--
