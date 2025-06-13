@@ -8,7 +8,6 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 - About Me section
 - Projects portfolio with links
 - Contact form
-- Downloadable resume/CV
 
 ## Technologies Used
 
