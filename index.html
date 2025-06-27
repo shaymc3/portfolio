@@ -227,13 +227,13 @@
     var widgetContainer = document.createElement('div');
     widgetContainer.style.cssText = 'position:fixed;' + 
       'right:20px;' +
-      'bottom:20px;z-index:9999;';
+      'bottom:10px;z-index:9999;';
     
     var button = document.createElement('button');
     button.style.cssText = 'width:40px;height:40px;border-radius:50%;border:none;' +
-      'background:linear-gradient(135deg,' + config.theme_color + ',#4338ca);' +
+      'background:linear-gradient(135deg,' + config.theme_color + ',#2980B9);' +
       'color:white;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);' +
-      'transition:all 0.2s;font-size:24px;display:flex;align-items:center;justify-content:center;';
+      'transition:all 0.2s;font-size:20px;display:flex;align-items:center;justify-content:center;';
     button.innerHTML = '💬';
     button.onmouseover = function() { this.style.transform = 'scale(1.05)'; };
     button.onmouseout = function() { this.style.transform = 'scale(1)'; };
