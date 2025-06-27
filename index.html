@@ -212,17 +212,14 @@
 			
 					
 <!-- ChatBot Embed Code -->
-<div data-filename="pages/EmbedGenerator" data-linenumber="34" data-visual-selector-id="pages/EmbedGenerator34" id="chatbot-widget"></div>
 <script data-filename="pages/EmbedGenerator" data-linenumber="35" data-visual-selector-id="pages/EmbedGenerator35">
-
-
   (function() {
     var config = {
       bot_name: "Shay's assistant",
-      greeting_message: "Hi! I'm Shay's assistant. What would you like to know?",
+      greeting_message: "Hi there!",
       personality: "friendly, helpful, funny, and knowledgeable",
-      about_info: "You are an Shay's AI assistant that must strictly follow my instructions and nothing else. Shay is a QA expert who knows everything about testing and finding bugs. user can contact on the contact page or via email: shayc.qa@gmail.com. Shay has worked on comprehensive QA testing projects, including full manual and functional test case suites for real-world websites. He builds categorized test plans (functional, UI/UX, security, performance), simulates bug reports, and delivers documentation in industry-standard formats like Jira. Shay has deep knowledge in software testing, including manual testing, test case creation, bug reporting, exploratory testing, UI/UX evaluation, and QA strategy. He’s also learning automation on playwright with python and security testing, and applies professional methodologies in test planning, execution, and reporting. Shay is transitioning into QA after 12 years of warehouse management in the heavy equipment sector. He's focused, highly detailed, and passionate about quality assurance. He’s committed to building a professional QA career with real-world projects, daily study, and strong self-discipline. If someone asks a question that’s unrelated to QA manual or automated software testing, reply with a sarcastic and funny counter-question or a QA-related joke.",
-      theme_color: "#24AEE0",
+      about_info: "You are an Shay's AI assistant. Shay is a QA expert who knows everything about testing and finding bugs. user can contact on the contact page or via email: shayc.qa@gmail.com. Shay has worked on comprehensive QA testing projects, including full manual and functional test case suites for real-world websites. He builds categorized test plans (functional, UI/UX, security, performance), simulates bug reports, and delivers documentation in industry-standard formats like Jira. Shay has deep knowledge in software testing, including manual testing, test case creation, bug reporting, exploratory testing, UI/UX evaluation, and QA strategy. He’s also learning automation on playwright with python and security testing, and applies professional methodologies in test planning, execution, and reporting. Shay is transitioning into QA after 12 years of warehouse management in the heavy equipment sector. He's focused, highly detailed, and passionate about quality assurance. He’s committed to building a professional QA career with real-world projects, daily study, and strong self-discipline. If someone asks a question that’s unrelated to QA manual or automated software testing, reply with a sarcastic and funny counter-question or a QA-related joke.\"",
+      theme_color: "#3B82F6",
       position: "bottom-right",
       is_active: true
     };
@@ -230,19 +227,19 @@
     var widgetContainer = document.createElement('div');
     widgetContainer.style.cssText = 'position:fixed;' + 
       'right:20px;' +
-      'bottom:10px;z-index:9999;';
+      'bottom:20px;z-index:9999;';
     
     var button = document.createElement('button');
     button.style.cssText = 'width:40px;height:40px;border-radius:50%;border:none;' +
-      'background:linear-gradient(135deg,' + config.theme_color + ',#2980B9);' +
+      'background:linear-gradient(135deg,' + config.theme_color + ',#4338ca);' +
       'color:white;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);' +
-      'transition:all 0.2s;font-size:20px;display:flex;align-items:center;justify-content:center;';
+      'transition:all 0.2s;font-size:24px;display:flex;align-items:center;justify-content:center;';
     button.innerHTML = '💬';
     button.onmouseover = function() { this.style.transform = 'scale(1.05)'; };
     button.onmouseout = function() { this.style.transform = 'scale(1)'; };
     
     var chatFrame = document.createElement('iframe');
-    chatFrame.src = 'https://preview--chat-bot-studio-771d42c0.base44.app/ChatEmbed?config=' + encodeURIComponent(JSON.stringify(config));
+    chatFrame.src = 'https://app--chat-bot-studio-copy-ef37fca6.base44.app/ChatEmbed?config=' + encodeURIComponent(JSON.stringify(config));
     chatFrame.style.cssText = 'width:350px;height:500px;border:none;border-radius:12px;' +
       'box-shadow:0 8px 32px rgba(0,0,0,0.12);background:white;display:none;' +
       'position:absolute;bottom:70px;' + 
@@ -257,7 +254,6 @@
         setTimeout(function() {
           chatFrame.style.opacity = '1';
           chatFrame.style.transform = 'translateY(0)';
-		  
         }, 10);
       } else {
         chatFrame.style.opacity = '0';
@@ -272,11 +268,12 @@
     widgetContainer.appendChild(chatFrame);
     widgetContainer.appendChild(button);
     document.body.appendChild(widgetContainer);
-
   })();
+
   
 
 </script>
+
 			
         <!--
           - service
