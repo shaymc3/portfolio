@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playwright Automation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Shay's Project</div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        <div class="nav-right" id="navMenu">
+            <a href="#tech">Tech Stack</a>
+            <a href="#action">In Action</a>
+            <a href="#analytics">Analytics</a>
+            <a href="#reports">Reports</a>
+            <a href="#docs">Docs</a>
+            <a href="#about" class="btn-nav">Connect.</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Playwright<span>Automation</span></h1>
+        <p>Advanced Python Cooperative Framework with sophisticated testing capabilities for modern web applications</p>
+        <div class="hero-buttons">
+            <a href="#action" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-secondary">
+                <span>★</span> Star on GitHub
+            </a>
+        </div>
+    </section>
+
+    <section class="section action-section" id="action">
+        <div class="section-header">
+            <h2 class="section-title">See It In Action</h2>
+            <p class="section-subtitle">Watch how Playwright Automation handles complex test scenarios</p>
+        </div>
+
+        <div class="video-container">
+            <div class="video-placeholder">
+                <div class="play-button"></div>
+            </div>
+        </div>
+
+        <p style="color: #8b92a8; margin-bottom: 60px;">If you would like to know more, schedule a demo?</p>
+
+        <div class="stats-grid">
+            <div class="tech-card">
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Test Coverage</div>
+                </div>
+            </div>
+        <div class="stat-item">
+            <div class="tech-card">
+                <div class="stat-number">99.2%</div>
+                <div class="stat-label">Pass Rate</div>
+                </div>
+            </div>
+        <div class="stat-item">
+                <div class="tech-card">
+                <div class="stat-number">10k+</div>
+                <div class="stat-label">Daily Tests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech-stack" id="tech">
+        <div class="section-header">
+            <h2 class="section-title">Tech Stack</h2>
+            <p class="section-subtitle">Built with cutting-edge tools and technologies for maximum CI/CD integration</p>
+        </div>
+        
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">🎭</div>
+                <h3>Playwright</h3>
+                <p>Fast and reliable cross-browser automation</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Powerful async/await framework</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">⚡</div>
+                <h3>FastAPI</h3>
+                <p>High-performance modern web framework</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🐳</div>
+                <h3>Docker</h3>
+                <p>Containerized test environments</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">📊</div>
+                <h3>PostgreSQL</h3>
+                <p>Robust data persistence layer</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">☁️</div>
+                <h3>AWS Lambda</h3>
+                <p>Serverless test execution</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🔄</div>
+                <h3>Redis</h3>
+                <p>High-speed caching layer</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">📝</div>
+                <h3>TypeScript</h3>
+                <p>Type-safe development</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">📈</div>
+                <h3>Grafana</h3>
+                <p>Real-time monitoring dashboards</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section analytics-section" id="analytics">
+        <div class="section-header">
+            <h2 class="section-title">Project Analytics</h2>
+            <p class="section-subtitle">Real-time insights and performance tracking for your testing pipeline</p>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Test Execution Graph</h3>
+                    <p class="chart-subtitle">Daily test runs over time</p>
+                </div>
+                <div class="chart-content">
+                    <div class="line-chart">
+                        <svg viewBox="0 0 400 200" style="width: 100%; height: 100%;">
+                            <polyline fill="none" stroke="#3b82f6" stroke-width="3" points="0,150 50,130 100,110 150,90 200,70 250,80 300,60 350,50 400,40"/>
+                            <circle cx="0" cy="150" r="4" fill="#3b82f6"/>
+                            <circle cx="100" cy="110" r="4" fill="#3b82f6"/>
+                            <circle cx="200" cy="70" r="4" fill="#3b82f6"/>
+                            <circle cx="300" cy="60" r="4" fill="#3b82f6"/>
+                            <circle cx="400" cy="40" r="4" fill="#3b82f6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Test Success by Module</h3>
+                    <p class="chart-subtitle">Module performance comparison</p>
+                </div>
+                <div class="chart-content">
+                    <div class="bar-chart">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Test Distribution</h3>
+                    <p class="chart-subtitle">Tests by category</p>
+                </div>
+                <div class="chart-content">
+                    <div class="donut-chart">
+                        <div class="donut"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Pass Rate Metric</h3>
+                    <p class="chart-subtitle">Overall test success rate</p>
+                </div>
+                <div class="chart-content">
+                    <div class="percentage-display">
+                        <div class="percentage-number">99.2%</div>
+                        <div class="percentage-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reports-section" id="reports">
+        <div class="section-header">
+            <h2 class="section-title">Allure Reports</h2>
+            <p class="section-subtitle">Make full integration with Allure reporting for detailed test documentation</p>
+        </div>
+
+        <div class="reports-content">
+            <div class="report-preview">
+                <div class="report-image">
+                    <span>📊 Allure Report Dashboard Preview</span>
+                </div>
+                <div class="report-details">
+                    <div class="detail-section">
+                        <h4>SPECIFICATIONS</h4>
+                        <ul class="detail-list">
+                            <li>User Authentication</li>
+                            <li>Product Catalog</li>
+                            <li>Shopping Cart</li>
+                            <li>Checkout Process</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <h4>FEATURES</h4>
+                        <ul class="detail-list">
+                            <li>Login Functionality</li>
+                            <li>Search Products</li>
+                            <li>Add to Cart</li>
+                            <li>Payment Gateway</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn-primary" style="display: inline-block;margin: 0 auto;margin-top: 40px;">View Sample Report</a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="section get-started" id="docs">
+        <div class="section-header">
+            <h2 class="section-title">Get Started</h2>
+            <p class="section-subtitle">Quick start guide to set up and run your first automation test</p>
+        </div>
+
+        <div class="docs-grid">
+            <div class="doc-card">
+                <h3>Installation</h3>
+                <p>Install Playwright and setup your test environment with a few simple commands</p>
+                <code>pip install playwright<br>playwright install</code>
+            </div>
+
+            <div class="doc-card">
+                <h3>Configuration</h3>
+                <p>Configure your test settings and browser options</p>
+                <code>pytest.ini<br>playwright.config.ts</code>
+            </div>
+
+            <div class="doc-card">
+                <h3>Write Tests</h3>
+                <p>Create your first automated test with our simple API</p>
+                <code>def test_example(page):<br>&nbsp;&nbsp;page.goto("url")<br>&nbsp;&nbsp;page.click("button")</code>
+            </div>
+
+            <div class="doc-card"> 
+                <h3>Run Testsdsfsdf</h3>
+                <p>Execute your tests and generate reports</p>
+                <code>pytest tests/<br>allure serve</code>
+            </div>
+
+            <div class="doc-card">
+                <h3>CI/CD Integration</h3>
+                <p>Integrate with your CI/CD pipeline</p>
+                <code>GitHub Actions<br>Jenkins<br>GitLab CI</code>
+            </div>
+
+            <div class="doc-card">
+                <h3>View Reports</h3>
+                <p>Access detailed test reports and analytics</p>
+                <code>allure serve allure-results</code>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-section">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-content" id="about">
+            <div class="about-card">
+                <h3>Shay Cohen</h3>
+                <p>I'm a passionate automation engineer with over 10 years of experience in building robust testing frameworks. This project combines my expertise in Python, web automation, and DevOps to create a comprehensive solution for modern web testing needs. I believe in writing clean, maintainable test code that empowers teams to ship with confidence.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">GitHub</a>
+                    <a href="#" class="social-btn">Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+           
+        </div>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
