@@ -3,67 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playwright Automation</title>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Automation Project</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">Shay's Project</div>
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
         <div class="nav-right" id="navMenu">
             <a href="#tech">Tech Stack</a>
             <a href="#action">In Action</a>
             <a href="#analytics">Analytics</a>
             <a href="#reports">Reports</a>
             <a href="#docs">Docs</a>
-            <a href="#about" class="btn-nav">Connect.</a>
+            <a href="#" class="btn-nav">Connect</a>
         </div>
     </nav>
 
     <section class="hero">
-        <h1>Playwright<span>Automation</span></h1>
-        <p>Advanced Python Cooperative Framework with sophisticated testing capabilities for modern web applications</p>
-        <div class="hero-buttons">
-            <a href="#action" class="btn-primary">Get Started</a>
-            <a href="#" class="btn-secondary">
-                <span>★</span> Star on GitHub
-            </a>
-        </div>
-    </section>
-
-    <section class="section action-section" id="action">
-        <div class="section-header">
-            <h2 class="section-title">See It In Action</h2>
-            <p class="section-subtitle">Watch how Playwright Automation handles complex test scenarios</p>
-        </div>
-
-        <div class="video-container">
-            <div class="video-placeholder">
-                <div class="play-button"></div>
+        <div class="hero-content">
+            <div class="hero-image">🎭</div>
+            <div class="hero-text">
+                <h1>Playwright<span> Automation</span></h1>
+                <p>Advanced Python Cooperative Framework with sophisticated testing capabilities for modern web applications</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Get Started</a>
+                <a href="#" class="btn-secondary">
+                    <span>★</span> Star on GitHub
+                </a>
             </div>
         </div>
-
-        <p style="color: #8b92a8; margin-bottom: 60px;">If you would like to know more, schedule a demo?</p>
-
-        <div class="stats-grid">
-            <div class="tech-card">
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Test Coverage</div>
-                </div>
-            </div>
-        <div class="stat-item">
-            <div class="tech-card">
-                <div class="stat-number">99.2%</div>
-                <div class="stat-label">Pass Rate</div>
-                </div>
-            </div>
-        <div class="stat-item">
-                <div class="tech-card">
-                <div class="stat-number">10k+</div>
-                <div class="stat-label">Daily Tests</div>
-                </div>
-            </div>
+        <div class="scroll-indicator" onclick="document.querySelector('#tech').scrollIntoView({behavior: 'smooth'})">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -122,7 +101,37 @@
         </div>
     </section>
 
+    <section class="section action-section" id="action">
+        <div class="section-header">
+            <h2 class="section-title">See It In Action</h2>
+            <p class="section-subtitle">Watch how Playwright Automation handles complex test scenarios</p>
+        </div>
 
+        <div class="video-container">
+            <div class="video-placeholder">
+                <img src="https://webdriver.io/assets/images/allure-bb6c9b036b07594235a5aca5aff5ac43.png" class="video-cover">
+                <div class="play-button"></div>
+                <div class="video-frame hidden"></div>
+            </div>
+        </div>
+
+        <p style="color: #8b92a8; margin-bottom: 60px;">If you would like to know more, schedule a demo?</p>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Test Coverage</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.2%</div>
+                <div class="stat-label">Pass Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10k+</div>
+                <div class="stat-label">Daily Tests</div>
+            </div>
+        </div>
+    </section>
 
     <section class="section analytics-section" id="analytics">
         <div class="section-header">
@@ -139,12 +148,36 @@
                 <div class="chart-content">
                     <div class="line-chart">
                         <svg viewBox="0 0 400 200" style="width: 100%; height: 100%;">
-                            <polyline fill="none" stroke="#3b82f6" stroke-width="3" points="0,150 50,130 100,110 150,90 200,70 250,80 300,60 350,50 400,40"/>
+                            <defs>
+                                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Area under line -->
+                            <path d="M0,150 L50,130 L100,110 L150,90 L200,70 L250,80 L300,60 L350,50 L400,40 L400,200 L0,200 Z" 
+                                  fill="url(#lineGradient)" opacity="0.5"/>
+                            <!-- Line -->
+                            <polyline fill="none" stroke="#3b82f6" stroke-width="3" 
+                                      points="0,150 50,130 100,110 150,90 200,70 250,80 300,60 350,50 400,40"/>
+                            <!-- Points -->
                             <circle cx="0" cy="150" r="4" fill="#3b82f6"/>
                             <circle cx="100" cy="110" r="4" fill="#3b82f6"/>
                             <circle cx="200" cy="70" r="4" fill="#3b82f6"/>
                             <circle cx="300" cy="60" r="4" fill="#3b82f6"/>
                             <circle cx="400" cy="40" r="4" fill="#3b82f6"/>
+                            <!-- Labels -->
+                            <text x="5" y="145" font-size="10" fill="#8b92a8">Day 1</text>
+                            <text x="95" y="105" font-size="10" fill="#8b92a8">Day 3</text>
+                            <text x="195" y="65" font-size="10" fill="#8b92a8">Day 5</text>
+                            <text x="295" y="55" font-size="10" fill="#8b92a8">Day 7</text>
+                            <text x="360" y="35" font-size="10" fill="#8b92a8">Today</text>
+                            <!-- Values -->
+                            <text x="5" y="165" font-size="11" fill="#3b82f6" font-weight="600">1.2k</text>
+                            <text x="95" y="125" font-size="11" fill="#3b82f6" font-weight="600">2.1k</text>
+                            <text x="195" y="85" font-size="11" fill="#3b82f6" font-weight="600">4.5k</text>
+                            <text x="295" y="75" font-size="11" fill="#3b82f6" font-weight="600">5.8k</text>
+                            <text x="360" y="55" font-size="11" fill="#3b82f6" font-weight="600">8.2k</text>
                         </svg>
                     </div>
                 </div>
@@ -157,10 +190,10 @@
                 </div>
                 <div class="chart-content">
                     <div class="bar-chart">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                        <div class="bar" data-value="87%" data-label="Login"></div>
+                        <div class="bar" data-value="92%" data-label="API"></div>
+                        <div class="bar" data-value="95%" data-label="UI"></div>
+                        <div class="bar" data-value="89%" data-label="E2E"></div>
                     </div>
                 </div>
             </div>
@@ -172,7 +205,31 @@
                 </div>
                 <div class="chart-content">
                     <div class="donut-chart">
-                        <div class="donut"></div>
+                        <div class="donut-container">
+                            <div class="donut"></div>
+                        </div>
+                        <div class="donut-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #3b82f6;"></div>
+                                <span class="legend-label">Unit Tests</span>
+                                <span class="legend-value">36%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #8b5cf6;"></div>
+                                <span class="legend-label">Integration</span>
+                                <span class="legend-value">25%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #ec4899;"></div>
+                                <span class="legend-label">E2E Tests</span>
+                                <span class="legend-value">17%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #f59e0b;"></div>
+                                <span class="legend-label">API Tests</span>
+                                <span class="legend-value">22%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,9 +257,29 @@
 
         <div class="reports-content">
             <div class="report-preview">
-                <div class="report-image">
-                    <span>📊 Allure Report Dashboard Preview</span>
+                <div class="report-carousel">
+                    <div class="report-images-container" id="reportCarousel">
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                        <div class="report-image">
+                            <img src="https://allurereport.org/images/hero.png">
+                        </div>
+                    </div>
                 </div>
+                <div class="carousel-dots" id="carouselDots"></div>
                 <div class="report-details">
                     <div class="detail-section">
                         <h4>SPECIFICATIONS</h4>
@@ -223,10 +300,11 @@
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="btn-primary" style="display: inline-block;margin: 0 auto;margin-top: 40px;">View Sample Report</a>
+                <div style="display: flex; justify-content: center;">
+                    <a href="#" class="btn-primary" style="display: inline-block; margin-top: 20px;">View Sample Report</a>
+                </div>
             </div>
 
-            
         </div>
     </section>
 
@@ -255,8 +333,8 @@
                 <code>def test_example(page):<br>&nbsp;&nbsp;page.goto("url")<br>&nbsp;&nbsp;page.click("button")</code>
             </div>
 
-            <div class="doc-card"> 
-                <h3>Run Testsdsfsdf</h3>
+            <div class="doc-card">
+                <h3>Run Tests</h3>
                 <p>Execute your tests and generate reports</p>
                 <code>pytest tests/<br>allure serve</code>
             </div>
@@ -278,15 +356,17 @@
     <section class="section about-section">
         <div class="section-header">
             <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">The creator and maintainer of Playwright Automation Framework</p>
         </div>
 
-        <div class="about-content" id="about">
+        <div class="about-content">
             <div class="about-card">
-                <h3>Shay Cohen</h3>
+                <h3>John Doe</h3>
                 <p>I'm a passionate automation engineer with over 10 years of experience in building robust testing frameworks. This project combines my expertise in Python, web automation, and DevOps to create a comprehensive solution for modern web testing needs. I believe in writing clean, maintainable test code that empowers teams to ship with confidence.</p>
                 <div class="social-links">
                     <a href="#" class="social-btn">LinkedIn</a>
                     <a href="#" class="social-btn">GitHub</a>
+                    <a href="#" class="social-btn">Twitter</a>
                     <a href="#" class="social-btn">Email</a>
                 </div>
             </div>
@@ -295,10 +375,40 @@
 
     <footer>
         <div class="footer-content">
-           
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Examples</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">GitHub Discussions</a></li>
+                    <li><a href="#">Stack Overflow</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>More</h4>
+                <ul>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Contributing</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
         </div>
-
+        <div class="footer-bottom">
+            © 2024 Playwright Automation Framework. All rights reserved.
+        </div>
     </footer>
-<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
